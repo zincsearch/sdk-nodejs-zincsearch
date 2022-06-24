@@ -125,117 +125,117 @@ All URIs are relative to *http://localhost:4080*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ZincSearchSDK.Default* | [**healthz**](docs/Default.md#healthz) | **GET** /healthz | Get healthz
-*ZincSearchSDK.Default* | [**version**](docs/Default.md#version) | **GET** /version | Get version
-*ZincSearchSDK.Document* | [**bulk**](docs/Document.md#bulk) | **POST** /api/_bulk | Bulk documents
-*ZincSearchSDK.Document* | [**delete**](docs/Document.md#delete) | **DELETE** /api/{index}/_doc/{id} | Delete document
-*ZincSearchSDK.Document* | [**esBulk**](docs/Document.md#esBulk) | **POST** /es/_bulk | ES bulk documents
-*ZincSearchSDK.Document* | [**index**](docs/Document.md#index) | **POST** /api/{index}/_doc | Create or update document
-*ZincSearchSDK.Document* | [**indexWithID**](docs/Document.md#indexWithID) | **PUT** /api/{index}/_doc/{id} | Create or update document with id
-*ZincSearchSDK.Document* | [**update**](docs/Document.md#update) | **POST** /api/{index}/_update/{id} | Update document with id
-*ZincSearchSDK.Index* | [**analyze**](docs/Index.md#analyze) | **POST** /api/_analyze | Analyze
-*ZincSearchSDK.Index* | [**analyzeIndex**](docs/Index.md#analyzeIndex) | **POST** /api/{index}/_analyze | Analyze
-*ZincSearchSDK.Index* | [**delete**](docs/Index.md#delete) | **DELETE** /api/index/{index} | Delete index
-*ZincSearchSDK.Index* | [**create**](docs/Index.md#create) | **POST** /api/index | Create index
-*ZincSearchSDK.Index* | [**createTemplate**](docs/Index.md#createTemplate) | **POST** /es/_index_template | Create update index template
-*ZincSearchSDK.Index* | [**deleteTemplate**](docs/Index.md#deleteTemplate) | **DELETE** /es/_index_template/{name} | Delete template
-*ZincSearchSDK.Index* | [**getMapping**](docs/Index.md#getMapping) | **GET** /api/{index}/_mapping | Get index mappings
-*ZincSearchSDK.Index* | [**getSettings**](docs/Index.md#getSettings) | **GET** /api/{index}/_settings | Get index settings
-*ZincSearchSDK.Index* | [**getTemplate**](docs/Index.md#getTemplate) | **GET** /es/_index_template/{name} | Get index template
-*ZincSearchSDK.Index* | [**list**](docs/Index.md#list) | **GET** /api/index | List indexes
-*ZincSearchSDK.Index* | [**listTemplates**](docs/Index.md#listTemplates) | **GET** /es/_index_template | List index teplates
-*ZincSearchSDK.Index* | [**refresh**](docs/Index.md#refresh) | **POST** /api/index/{index}/refresh | Resfresh index
-*ZincSearchSDK.Index* | [**setMapping**](docs/Index.md#setMapping) | **PUT** /api/{index}/_mapping | Set index mappings
-*ZincSearchSDK.Index* | [**setSettings**](docs/Index.md#setSettings) | **PUT** /api/{index}/_settings | Set index Settings
-*ZincSearchSDK.Index* | [**updateTemplate**](docs/Index.md#updateTemplate) | **PUT** /es/_index_template/{name} | Create update index template
-*ZincSearchSDK.Search* | [**mSearch**](docs/Search.md#mSearch) | **POST** /es/_msearch | Search V2 MultipleSearch for compatible ES
-*ZincSearchSDK.Search* | [**search**](docs/Search.md#search) | **POST** /es/{index}/_search | Search V2 DSL for compatible ES
-*ZincSearchSDK.Search* | [**searchV1**](docs/Search.md#searchV1) | **POST** /api/{index}/_search | Search V1
-*ZincSearchSDK.User* | [**delete**](docs/User.md#delete) | **DELETE** /api/user/{id} | Delete user
-*ZincSearchSDK.User* | [**create**](docs/User.md#create) | **POST** /api/user | Create user
-*ZincSearchSDK.User* | [**list**](docs/User.md#list) | **GET** /api/user | List user
-*ZincSearchSDK.User* | [**login**](docs/User.md#login) | **POST** /api/login | Login
-*ZincSearchSDK.User* | [**update**](docs/User.md#update) | **PUT** /api/user | Update user
+*ZincSearchSDK.Default* | [**healthz**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Default.md#healthz) | **GET** /healthz | Get healthz
+*ZincSearchSDK.Default* | [**version**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Default.md#version) | **GET** /version | Get version
+*ZincSearchSDK.Document* | [**bulk**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Document.md#bulk) | **POST** /api/_bulk | Bulk documents
+*ZincSearchSDK.Document* | [**delete**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Document.md#delete) | **DELETE** /api/{index}/_doc/{id} | Delete document
+*ZincSearchSDK.Document* | [**esBulk**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Document.md#esBulk) | **POST** /es/_bulk | ES bulk documents
+*ZincSearchSDK.Document* | [**index**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Document.md#index) | **POST** /api/{index}/_doc | Create or update document
+*ZincSearchSDK.Document* | [**indexWithID**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Document.md#indexWithID) | **PUT** /api/{index}/_doc/{id} | Create or update document with id
+*ZincSearchSDK.Document* | [**update**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Document.md#update) | **POST** /api/{index}/_update/{id} | Update document with id
+*ZincSearchSDK.Index* | [**analyze**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#analyze) | **POST** /api/_analyze | Analyze
+*ZincSearchSDK.Index* | [**analyzeIndex**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#analyzeIndex) | **POST** /api/{index}/_analyze | Analyze
+*ZincSearchSDK.Index* | [**delete**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#delete) | **DELETE** /api/index/{index} | Delete index
+*ZincSearchSDK.Index* | [**create**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#create) | **POST** /api/index | Create index
+*ZincSearchSDK.Index* | [**createTemplate**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#createTemplate) | **POST** /es/_index_template | Create update index template
+*ZincSearchSDK.Index* | [**deleteTemplate**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#deleteTemplate) | **DELETE** /es/_index_template/{name} | Delete template
+*ZincSearchSDK.Index* | [**getMapping**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#getMapping) | **GET** /api/{index}/_mapping | Get index mappings
+*ZincSearchSDK.Index* | [**getSettings**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#getSettings) | **GET** /api/{index}/_settings | Get index settings
+*ZincSearchSDK.Index* | [**getTemplate**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#getTemplate) | **GET** /es/_index_template/{name} | Get index template
+*ZincSearchSDK.Index* | [**list**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#list) | **GET** /api/index | List indexes
+*ZincSearchSDK.Index* | [**listTemplates**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#listTemplates) | **GET** /es/_index_template | List index teplates
+*ZincSearchSDK.Index* | [**refresh**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#refresh) | **POST** /api/index/{index}/refresh | Resfresh index
+*ZincSearchSDK.Index* | [**setMapping**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#setMapping) | **PUT** /api/{index}/_mapping | Set index mappings
+*ZincSearchSDK.Index* | [**setSettings**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#setSettings) | **PUT** /api/{index}/_settings | Set index Settings
+*ZincSearchSDK.Index* | [**updateTemplate**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Index.md#updateTemplate) | **PUT** /es/_index_template/{name} | Create update index template
+*ZincSearchSDK.Search* | [**mSearch**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Search.md#mSearch) | **POST** /es/_msearch | Search V2 MultipleSearch for compatible ES
+*ZincSearchSDK.Search* | [**search**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Search.md#search) | **POST** /es/{index}/_search | Search V2 DSL for compatible ES
+*ZincSearchSDK.Search* | [**searchV1**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/Search.md#searchV1) | **POST** /api/{index}/_search | Search V1
+*ZincSearchSDK.User* | [**delete**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/User.md#delete) | **DELETE** /api/user/{id} | Delete user
+*ZincSearchSDK.User* | [**create**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/User.md#create) | **POST** /api/user | Create user
+*ZincSearchSDK.User* | [**list**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/User.md#list) | **GET** /api/user | List user
+*ZincSearchSDK.User* | [**login**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/User.md#login) | **POST** /api/login | Login
+*ZincSearchSDK.User* | [**update**](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/User.md#update) | **PUT** /api/user | Update user
 
 
 ## Documentation for Models
 
- - [ZincSearchSDK.AggregationHistogramBound](docs/AggregationHistogramBound.md)
- - [ZincSearchSDK.AuthLoginRequest](docs/AuthLoginRequest.md)
- - [ZincSearchSDK.AuthLoginResponse](docs/AuthLoginResponse.md)
- - [ZincSearchSDK.AuthLoginUser](docs/AuthLoginUser.md)
- - [ZincSearchSDK.CoreIndex](docs/CoreIndex.md)
- - [ZincSearchSDK.IndexAnalyzeResponse](docs/IndexAnalyzeResponse.md)
- - [ZincSearchSDK.IndexAnalyzeResponseToken](docs/IndexAnalyzeResponseToken.md)
- - [ZincSearchSDK.MetaAggregationAutoDateHistogram](docs/MetaAggregationAutoDateHistogram.md)
- - [ZincSearchSDK.MetaAggregationDateHistogram](docs/MetaAggregationDateHistogram.md)
- - [ZincSearchSDK.MetaAggregationDateRange](docs/MetaAggregationDateRange.md)
- - [ZincSearchSDK.MetaAggregationHistogram](docs/MetaAggregationHistogram.md)
- - [ZincSearchSDK.MetaAggregationIPRange](docs/MetaAggregationIPRange.md)
- - [ZincSearchSDK.MetaAggregationMetric](docs/MetaAggregationMetric.md)
- - [ZincSearchSDK.MetaAggregationRange](docs/MetaAggregationRange.md)
- - [ZincSearchSDK.MetaAggregationResponse](docs/MetaAggregationResponse.md)
- - [ZincSearchSDK.MetaAggregations](docs/MetaAggregations.md)
- - [ZincSearchSDK.MetaAggregationsTerms](docs/MetaAggregationsTerms.md)
- - [ZincSearchSDK.MetaAnalyzer](docs/MetaAnalyzer.md)
- - [ZincSearchSDK.MetaBoolQuery](docs/MetaBoolQuery.md)
- - [ZincSearchSDK.MetaDateRange](docs/MetaDateRange.md)
- - [ZincSearchSDK.MetaExistsQuery](docs/MetaExistsQuery.md)
- - [ZincSearchSDK.MetaFuzzyQuery](docs/MetaFuzzyQuery.md)
- - [ZincSearchSDK.MetaHTTPResponse](docs/MetaHTTPResponse.md)
- - [ZincSearchSDK.MetaHTTPResponseDocument](docs/MetaHTTPResponseDocument.md)
- - [ZincSearchSDK.MetaHTTPResponseError](docs/MetaHTTPResponseError.md)
- - [ZincSearchSDK.MetaHTTPResponseID](docs/MetaHTTPResponseID.md)
- - [ZincSearchSDK.MetaHTTPResponseIndex](docs/MetaHTTPResponseIndex.md)
- - [ZincSearchSDK.MetaHTTPResponseRecordCount](docs/MetaHTTPResponseRecordCount.md)
- - [ZincSearchSDK.MetaHTTPResponseTemplate](docs/MetaHTTPResponseTemplate.md)
- - [ZincSearchSDK.MetaHealthzResponse](docs/MetaHealthzResponse.md)
- - [ZincSearchSDK.MetaHighlight](docs/MetaHighlight.md)
- - [ZincSearchSDK.MetaHit](docs/MetaHit.md)
- - [ZincSearchSDK.MetaHits](docs/MetaHits.md)
- - [ZincSearchSDK.MetaIPRange](docs/MetaIPRange.md)
- - [ZincSearchSDK.MetaIdsQuery](docs/MetaIdsQuery.md)
- - [ZincSearchSDK.MetaIndexAnalysis](docs/MetaIndexAnalysis.md)
- - [ZincSearchSDK.MetaIndexSettings](docs/MetaIndexSettings.md)
- - [ZincSearchSDK.MetaIndexShard](docs/MetaIndexShard.md)
- - [ZincSearchSDK.MetaIndexSimple](docs/MetaIndexSimple.md)
- - [ZincSearchSDK.MetaIndexTemplate](docs/MetaIndexTemplate.md)
- - [ZincSearchSDK.MetaMappings](docs/MetaMappings.md)
- - [ZincSearchSDK.MetaMatchBoolPrefixQuery](docs/MetaMatchBoolPrefixQuery.md)
- - [ZincSearchSDK.MetaMatchPhrasePrefixQuery](docs/MetaMatchPhrasePrefixQuery.md)
- - [ZincSearchSDK.MetaMatchPhraseQuery](docs/MetaMatchPhraseQuery.md)
- - [ZincSearchSDK.MetaMatchQuery](docs/MetaMatchQuery.md)
- - [ZincSearchSDK.MetaMultiMatchQuery](docs/MetaMultiMatchQuery.md)
- - [ZincSearchSDK.MetaPrefixQuery](docs/MetaPrefixQuery.md)
- - [ZincSearchSDK.MetaProperty](docs/MetaProperty.md)
- - [ZincSearchSDK.MetaQuery](docs/MetaQuery.md)
- - [ZincSearchSDK.MetaQueryStringQuery](docs/MetaQueryStringQuery.md)
- - [ZincSearchSDK.MetaRange](docs/MetaRange.md)
- - [ZincSearchSDK.MetaRangeQuery](docs/MetaRangeQuery.md)
- - [ZincSearchSDK.MetaRegexpQuery](docs/MetaRegexpQuery.md)
- - [ZincSearchSDK.MetaSearchResponse](docs/MetaSearchResponse.md)
- - [ZincSearchSDK.MetaShards](docs/MetaShards.md)
- - [ZincSearchSDK.MetaSimpleQueryStringQuery](docs/MetaSimpleQueryStringQuery.md)
- - [ZincSearchSDK.MetaTemplate](docs/MetaTemplate.md)
- - [ZincSearchSDK.MetaTemplateTemplate](docs/MetaTemplateTemplate.md)
- - [ZincSearchSDK.MetaTermQuery](docs/MetaTermQuery.md)
- - [ZincSearchSDK.MetaTotal](docs/MetaTotal.md)
- - [ZincSearchSDK.MetaUser](docs/MetaUser.md)
- - [ZincSearchSDK.MetaVersionResponse](docs/MetaVersionResponse.md)
- - [ZincSearchSDK.MetaWildcardQuery](docs/MetaWildcardQuery.md)
- - [ZincSearchSDK.MetaZincQuery](docs/MetaZincQuery.md)
- - [ZincSearchSDK.V1AggregationBucket](docs/V1AggregationBucket.md)
- - [ZincSearchSDK.V1AggregationDateRange](docs/V1AggregationDateRange.md)
- - [ZincSearchSDK.V1AggregationNumberRange](docs/V1AggregationNumberRange.md)
- - [ZincSearchSDK.V1AggregationParams](docs/V1AggregationParams.md)
- - [ZincSearchSDK.V1AggregationResponse](docs/V1AggregationResponse.md)
- - [ZincSearchSDK.V1Hit](docs/V1Hit.md)
- - [ZincSearchSDK.V1Hits](docs/V1Hits.md)
- - [ZincSearchSDK.V1QueryHighlight](docs/V1QueryHighlight.md)
- - [ZincSearchSDK.V1QueryParams](docs/V1QueryParams.md)
- - [ZincSearchSDK.V1SearchResponse](docs/V1SearchResponse.md)
- - [ZincSearchSDK.V1Total](docs/V1Total.md)
- - [ZincSearchSDK.V1ZincQuery](docs/V1ZincQuery.md)
+ - [ZincSearchSDK.AggregationHistogramBound](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/AggregationHistogramBound.md)
+ - [ZincSearchSDK.AuthLoginRequest](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/AuthLoginRequest.md)
+ - [ZincSearchSDK.AuthLoginResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/AuthLoginResponse.md)
+ - [ZincSearchSDK.AuthLoginUser](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/AuthLoginUser.md)
+ - [ZincSearchSDK.CoreIndex](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/CoreIndex.md)
+ - [ZincSearchSDK.IndexAnalyzeResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/IndexAnalyzeResponse.md)
+ - [ZincSearchSDK.IndexAnalyzeResponseToken](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/IndexAnalyzeResponseToken.md)
+ - [ZincSearchSDK.MetaAggregationAutoDateHistogram](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationAutoDateHistogram.md)
+ - [ZincSearchSDK.MetaAggregationDateHistogram](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationDateHistogram.md)
+ - [ZincSearchSDK.MetaAggregationDateRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationDateRange.md)
+ - [ZincSearchSDK.MetaAggregationHistogram](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationHistogram.md)
+ - [ZincSearchSDK.MetaAggregationIPRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationIPRange.md)
+ - [ZincSearchSDK.MetaAggregationMetric](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationMetric.md)
+ - [ZincSearchSDK.MetaAggregationRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationRange.md)
+ - [ZincSearchSDK.MetaAggregationResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationResponse.md)
+ - [ZincSearchSDK.MetaAggregations](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregations.md)
+ - [ZincSearchSDK.MetaAggregationsTerms](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAggregationsTerms.md)
+ - [ZincSearchSDK.MetaAnalyzer](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaAnalyzer.md)
+ - [ZincSearchSDK.MetaBoolQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaBoolQuery.md)
+ - [ZincSearchSDK.MetaDateRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaDateRange.md)
+ - [ZincSearchSDK.MetaExistsQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaExistsQuery.md)
+ - [ZincSearchSDK.MetaFuzzyQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaFuzzyQuery.md)
+ - [ZincSearchSDK.MetaHTTPResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponse.md)
+ - [ZincSearchSDK.MetaHTTPResponseDocument](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponseDocument.md)
+ - [ZincSearchSDK.MetaHTTPResponseError](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponseError.md)
+ - [ZincSearchSDK.MetaHTTPResponseID](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponseID.md)
+ - [ZincSearchSDK.MetaHTTPResponseIndex](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponseIndex.md)
+ - [ZincSearchSDK.MetaHTTPResponseRecordCount](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponseRecordCount.md)
+ - [ZincSearchSDK.MetaHTTPResponseTemplate](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHTTPResponseTemplate.md)
+ - [ZincSearchSDK.MetaHealthzResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHealthzResponse.md)
+ - [ZincSearchSDK.MetaHighlight](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHighlight.md)
+ - [ZincSearchSDK.MetaHit](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHit.md)
+ - [ZincSearchSDK.MetaHits](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaHits.md)
+ - [ZincSearchSDK.MetaIPRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIPRange.md)
+ - [ZincSearchSDK.MetaIdsQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIdsQuery.md)
+ - [ZincSearchSDK.MetaIndexAnalysis](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIndexAnalysis.md)
+ - [ZincSearchSDK.MetaIndexSettings](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIndexSettings.md)
+ - [ZincSearchSDK.MetaIndexShard](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIndexShard.md)
+ - [ZincSearchSDK.MetaIndexSimple](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIndexSimple.md)
+ - [ZincSearchSDK.MetaIndexTemplate](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaIndexTemplate.md)
+ - [ZincSearchSDK.MetaMappings](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaMappings.md)
+ - [ZincSearchSDK.MetaMatchBoolPrefixQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaMatchBoolPrefixQuery.md)
+ - [ZincSearchSDK.MetaMatchPhrasePrefixQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaMatchPhrasePrefixQuery.md)
+ - [ZincSearchSDK.MetaMatchPhraseQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaMatchPhraseQuery.md)
+ - [ZincSearchSDK.MetaMatchQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaMatchQuery.md)
+ - [ZincSearchSDK.MetaMultiMatchQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaMultiMatchQuery.md)
+ - [ZincSearchSDK.MetaPrefixQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaPrefixQuery.md)
+ - [ZincSearchSDK.MetaProperty](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaProperty.md)
+ - [ZincSearchSDK.MetaQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaQuery.md)
+ - [ZincSearchSDK.MetaQueryStringQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaQueryStringQuery.md)
+ - [ZincSearchSDK.MetaRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaRange.md)
+ - [ZincSearchSDK.MetaRangeQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaRangeQuery.md)
+ - [ZincSearchSDK.MetaRegexpQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaRegexpQuery.md)
+ - [ZincSearchSDK.MetaSearchResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaSearchResponse.md)
+ - [ZincSearchSDK.MetaShards](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaShards.md)
+ - [ZincSearchSDK.MetaSimpleQueryStringQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaSimpleQueryStringQuery.md)
+ - [ZincSearchSDK.MetaTemplate](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaTemplate.md)
+ - [ZincSearchSDK.MetaTemplateTemplate](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaTemplateTemplate.md)
+ - [ZincSearchSDK.MetaTermQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaTermQuery.md)
+ - [ZincSearchSDK.MetaTotal](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaTotal.md)
+ - [ZincSearchSDK.MetaUser](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaUser.md)
+ - [ZincSearchSDK.MetaVersionResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaVersionResponse.md)
+ - [ZincSearchSDK.MetaWildcardQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaWildcardQuery.md)
+ - [ZincSearchSDK.MetaZincQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/MetaZincQuery.md)
+ - [ZincSearchSDK.V1AggregationBucket](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1AggregationBucket.md)
+ - [ZincSearchSDK.V1AggregationDateRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1AggregationDateRange.md)
+ - [ZincSearchSDK.V1AggregationNumberRange](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1AggregationNumberRange.md)
+ - [ZincSearchSDK.V1AggregationParams](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1AggregationParams.md)
+ - [ZincSearchSDK.V1AggregationResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1AggregationResponse.md)
+ - [ZincSearchSDK.V1Hit](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1Hit.md)
+ - [ZincSearchSDK.V1Hits](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1Hits.md)
+ - [ZincSearchSDK.V1QueryHighlight](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1QueryHighlight.md)
+ - [ZincSearchSDK.V1QueryParams](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1QueryParams.md)
+ - [ZincSearchSDK.V1SearchResponse](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1SearchResponse.md)
+ - [ZincSearchSDK.V1Total](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1Total.md)
+ - [ZincSearchSDK.V1ZincQuery](https://github.com/zinclabs/sdk-nodejs-zincsearch/tree/main/docs/V1ZincQuery.md)
 
 
 ## Documentation for Authorization
