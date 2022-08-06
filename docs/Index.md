@@ -10,9 +10,14 @@ Method | HTTP request | Description
 [**create**](Index.md#create) | **POST** /api/index | Create index
 [**createTemplate**](Index.md#createTemplate) | **POST** /es/_index_template | Create update index template
 [**deleteTemplate**](Index.md#deleteTemplate) | **DELETE** /es/_index_template/{name} | Delete template
+[**eSCreateIndex**](Index.md#eSCreateIndex) | **PUT** /es/{index} | Create index for compatible ES
+[**eSGetMapping**](Index.md#eSGetMapping) | **GET** /es/{index}/_mapping | Get index mappings for compatible ES
+[**esExists**](Index.md#esExists) | **HEAD** /es/{index} | Checks if the index exists for compatible ES
+[**exists**](Index.md#exists) | **HEAD** /api/index/{index} | Checks if the index exists
 [**getMapping**](Index.md#getMapping) | **GET** /api/{index}/_mapping | Get index mappings
 [**getSettings**](Index.md#getSettings) | **GET** /api/{index}/_settings | Get index settings
 [**getTemplate**](Index.md#getTemplate) | **GET** /es/_index_template/{name} | Get index template
+[**indexNameList**](Index.md#indexNameList) | **GET** /api/index_name | List index Name
 [**list**](Index.md#list) | **GET** /api/index | List indexes
 [**listTemplates**](Index.md#listTemplates) | **GET** /es/_index_template | List index teplates
 [**refresh**](Index.md#refresh) | **POST** /api/index/{index}/refresh | Resfresh index
@@ -170,7 +175,7 @@ Name | Type | Description  | Notes
 
 ## create
 
-> MetaHTTPResponseIndex create(index)
+> MetaHTTPResponseIndex create(data)
 
 Create index
 
@@ -185,8 +190,8 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new ZincSearchSDK.Index();
-let index = new ZincSearchSDK.MetaIndexSimple(); // MetaIndexSimple | Index data
-apiInstance.create(index, (error, data, response) => {
+let data = new ZincSearchSDK.MetaIndexSimple(); // MetaIndexSimple | Index data
+apiInstance.create(data, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -200,7 +205,7 @@ apiInstance.create(index, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **index** | [**MetaIndexSimple**](MetaIndexSimple.md)| Index data | 
+ **data** | [**MetaIndexSimple**](MetaIndexSimple.md)| Index data | 
 
 ### Return type
 
@@ -297,6 +302,200 @@ apiInstance.deleteTemplate(name, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| Template | 
+
+### Return type
+
+[**MetaHTTPResponse**](MetaHTTPResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## eSCreateIndex
+
+> Object eSCreateIndex(index, data)
+
+Create index for compatible ES
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let index = "index_example"; // String | Index
+let data = new ZincSearchSDK.MetaIndexSimple(); // MetaIndexSimple | Index data
+apiInstance.eSCreateIndex(index, data, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **String**| Index | 
+ **data** | [**MetaIndexSimple**](MetaIndexSimple.md)| Index data | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## eSGetMapping
+
+> Object eSGetMapping(index)
+
+Get index mappings for compatible ES
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let index = "index_example"; // String | Index
+apiInstance.eSGetMapping(index, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **String**| Index | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## esExists
+
+> MetaHTTPResponse esExists(index)
+
+Checks if the index exists for compatible ES
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let index = "index_example"; // String | Index
+apiInstance.esExists(index, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **String**| Index | 
+
+### Return type
+
+[**MetaHTTPResponse**](MetaHTTPResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## exists
+
+> MetaHTTPResponse exists(index)
+
+Checks if the index exists
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let index = "index_example"; // String | Index
+apiInstance.exists(index, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **String**| Index | 
 
 ### Return type
 
@@ -456,9 +655,59 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## indexNameList
+
+> [String] indexNameList(opts)
+
+List index Name
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let opts = {
+  'name': "name_example" // String | IndexName
+};
+apiInstance.indexNameList(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **String**| IndexName | [optional] 
+
+### Return type
+
+**[String]**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## list
 
-> [CoreIndex] list()
+> IndexIndexListResponse list(opts)
 
 List indexes
 
@@ -473,7 +722,14 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new ZincSearchSDK.Index();
-apiInstance.list((error, data, response) => {
+let opts = {
+  'pageNum': 56, // Number | page num
+  'pageSize': 56, // Number | page size
+  'sortBy': "sortBy_example", // String | sort by
+  'desc': true, // Boolean | desc
+  'name': "name_example" // String | name
+};
+apiInstance.list(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -484,11 +740,18 @@ apiInstance.list((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pageNum** | **Number**| page num | [optional] 
+ **pageSize** | **Number**| page size | [optional] 
+ **sortBy** | **String**| sort by | [optional] 
+ **desc** | **Boolean**| desc | [optional] 
+ **name** | **String**| name | [optional] 
 
 ### Return type
 
-[**[CoreIndex]**](CoreIndex.md)
+[**IndexIndexListResponse**](IndexIndexListResponse.md)
 
 ### Authorization
 

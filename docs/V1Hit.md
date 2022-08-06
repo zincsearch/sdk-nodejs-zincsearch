@@ -10,5 +10,6 @@ Name | Type | Description | Notes
 **score** | **Number** |  | [optional] 
 **source** | **Object** |  | [optional] 
 **type** | **String** |  | [optional] 
+**highlight** | **Object** |  | [optional] 
 
 

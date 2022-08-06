@@ -5,10 +5,12 @@ All URIs are relative to *http://localhost:4080*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**bulk**](Document.md#bulk) | **POST** /api/_bulk | Bulk documents
+[**bulkv2**](Document.md#bulkv2) | **POST** /api/_bulkv2 | Bulkv2 documents
 [**delete**](Document.md#delete) | **DELETE** /api/{index}/_doc/{id} | Delete document
 [**esBulk**](Document.md#esBulk) | **POST** /es/_bulk | ES bulk documents
 [**index**](Document.md#index) | **POST** /api/{index}/_doc | Create or update document
 [**indexWithID**](Document.md#indexWithID) | **PUT** /api/{index}/_doc/{id} | Create or update document with id
+[**multi**](Document.md#multi) | **POST** /api/{index}/_multi | Multi documents
 [**update**](Document.md#update) | **POST** /api/{index}/_update/{id} | Update document with id
 
 
@@ -58,6 +60,54 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: text/plain
+- **Accept**: application/json
+
+
+## bulkv2
+
+> MetaHTTPResponseRecordCount bulkv2(query)
+
+Bulkv2 documents
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Document();
+let query = new ZincSearchSDK.MetaJSONIngest(); // MetaJSONIngest | Query
+apiInstance.bulkv2(query, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **query** | [**MetaJSONIngest**](MetaJSONIngest.md)| Query | 
+
+### Return type
+
+[**MetaHTTPResponseRecordCount**](MetaHTTPResponseRecordCount.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 
@@ -258,6 +308,56 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## multi
+
+> MetaHTTPResponseRecordCount multi(index, query)
+
+Multi documents
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Document();
+let index = "index_example"; // String | Index
+let query = "query_example"; // String | Query
+apiInstance.multi(index, query, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **String**| Index | 
+ **query** | **String**| Query | 
+
+### Return type
+
+[**MetaHTTPResponseRecordCount**](MetaHTTPResponseRecordCount.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: text/plain
 - **Accept**: application/json
 
 

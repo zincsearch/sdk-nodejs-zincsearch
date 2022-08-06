@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zincsearch-sdk": "^0.2.0"
+    "zincsearch-sdk": "0.2.7"
   }
 }
