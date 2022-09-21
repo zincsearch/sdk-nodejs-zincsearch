@@ -1,12 +1,7 @@
 {
   "name": "zincsearch-sdk",
-  "version": "0.2.7",
-  "description": "Zinc Search engine API documents",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zinclabs/sdk-nodejs-zincsearch.git"
-  },
-  "homepage": "https://docs.zincsearch.com",
+  "version": "0.3.3",
+  "description": "Zinc Search engine API documents https://docs.zincsearch.com",
   "license": "Apache 2.0",
   "main": "dist/index.js",
   "scripts": {

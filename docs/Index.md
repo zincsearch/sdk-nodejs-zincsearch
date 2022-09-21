@@ -4,6 +4,7 @@ All URIs are relative to *http://localhost:4080*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**addOrRemoveESAlias**](Index.md#addOrRemoveESAlias) | **POST** /es/_aliases | Add or remove index alias for compatible ES
 [**analyze**](Index.md#analyze) | **POST** /api/_analyze | Analyze
 [**analyzeIndex**](Index.md#analyzeIndex) | **POST** /api/{index}/_analyze | Analyze
 [**delete**](Index.md#delete) | **DELETE** /api/index/{index} | Delete index
@@ -14,6 +15,8 @@ Method | HTTP request | Description
 [**eSGetMapping**](Index.md#eSGetMapping) | **GET** /es/{index}/_mapping | Get index mappings for compatible ES
 [**esExists**](Index.md#esExists) | **HEAD** /es/{index} | Checks if the index exists for compatible ES
 [**exists**](Index.md#exists) | **HEAD** /api/index/{index} | Checks if the index exists
+[**getESAliases**](Index.md#getESAliases) | **GET** /es/{target}/_alias/{target_alias} | Get index alias for compatible ES
+[**getIndex**](Index.md#getIndex) | **GET** /api/index/{index} | Get index metadata
 [**getMapping**](Index.md#getMapping) | **GET** /api/{index}/_mapping | Get index mappings
 [**getSettings**](Index.md#getSettings) | **GET** /api/{index}/_settings | Get index settings
 [**getTemplate**](Index.md#getTemplate) | **GET** /es/_index_template/{name} | Get index template
@@ -25,6 +28,50 @@ Method | HTTP request | Description
 [**setSettings**](Index.md#setSettings) | **PUT** /api/{index}/_settings | Set index Settings
 [**updateTemplate**](Index.md#updateTemplate) | **PUT** /es/_index_template/{name} | Create update index template
 
+
+
+## addOrRemoveESAlias
+
+> Object addOrRemoveESAlias()
+
+Add or remove index alias for compatible ES
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+apiInstance.addOrRemoveESAlias((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
 ## analyze
@@ -500,6 +547,104 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**MetaHTTPResponse**](MetaHTTPResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getESAliases
+
+> Object getESAliases(target, targetAlias)
+
+Get index alias for compatible ES
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let target = "target_example"; // String | Target Index
+let targetAlias = "targetAlias_example"; // String | Target Alias
+apiInstance.getESAliases(target, targetAlias, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **target** | **String**| Target Index | 
+ **targetAlias** | **String**| Target Alias | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getIndex
+
+> Object getIndex(index)
+
+Get index metadata
+
+### Example
+
+```javascript
+import ZincSearchSDK from 'zincsearch-sdk';
+let defaultClient = ZincSearchSDK.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new ZincSearchSDK.Index();
+let index = "index_example"; // String | Index
+apiInstance.getIndex(index, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **String**| Index | 
+
+### Return type
+
+**Object**
 
 ### Authorization
 
